@@ -118,7 +118,7 @@ body {
     position: relative;
     z-index: 2;
     font-size: clamp(6rem, 48vw, 80rem);
-    font-family: 'Orbitron', monospace, sans-serif;
+    font-family: 'Audiowide', monospace, sans-serif;
     font-weight: 900;
     color: white;
     line-height: 0.85;
