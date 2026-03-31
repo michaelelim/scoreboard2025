@@ -141,21 +141,7 @@ document.addEventListener('DOMContentLoaded', () => {
         updateScores();
     });
 
-    teamANameInput.addEventListener('input', (e) => {
-        teamA.querySelector('input').value = e.target.value;
-    });
-
-    teamBNameInput.addEventListener('input', (e) => {
-        teamB.querySelector('input').value = e.target.value;
-    });
-
-    teamANameInput.addEventListener('click', (e) => {
-        e.stopPropagation();
-    });
-
-    teamBNameInput.addEventListener('click', (e) => {
-        e.stopPropagation();
-    });
+    // Names are now in the top timer bar, no sync needed
 
     toggleButton.textContent = '-';
 
