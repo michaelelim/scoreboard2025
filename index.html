@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Scoreboard</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23f59e0b'><path d='M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10 10-4.5 10-10S17.5 2 12 2zm4 11H9v2h7v-2zm-4.5-4.2c-.8 0-1.5.7-1.5 1.5v1.4c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5V9.3c0-.8-.7-1.5-1.5-1.5zM12 1C5.9 1 1 5.9 1 12s4.9 11 11 11 11-4.9 11-11S18.1 1 12 1z'/><text x='8' y='17' font-size='10' fill='white' font-weight='bold'>1:1</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="timer">
+            <input type="text" id="countdownInput" value="55:00" style="display: none;">
+        </div>
+        <div id="scoreboard">
+            <div class="team" id="teamA">
+                <input type="text" id="teamAName" value="Player 1">
+                <p class="score">0</p>
+                <span class="change-color" id="changeColorA">*</span>
+            </div>
+            <div class="team" id="teamB">
+                <input type="text" id="teamBName" value="Player 2">
+                <p class="score">0</p>
+                <span class="change-color" id="changeColorB">*</span>
+            </div>
+        </div>
+        <div id="controls">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+            <button id="toggleClock">Toggle Clock</button>
+        </div>
+        <button id="toggleControls" class="toggle">+</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
