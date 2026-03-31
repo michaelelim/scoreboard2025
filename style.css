@@ -73,17 +73,32 @@ body {
 #teamA { background-color: #3b82f6; }
 #teamB { background-color: #ef4444; }
 
-/* Team name input — visible but subtle */
+/* Colour change button */
+.change-color {
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    font-size: 1.4rem;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 3;
+    transition: opacity 0.3s;
+}
+.change-color:hover { opacity: 0.85; }
+#changeColorA { left: 20px; right: auto; }
+#changeColorB { left: auto; right: 20px; }
+
+/* Team name input */
 .team input[type="text"] {
     position: relative; z-index: 2;
-    width: 90%; max-width: 600px;
+    width: 90%; max-width: 500px;
     text-align: center;
     background: transparent;
     border: none;
     border-bottom: 2px solid transparent;
-    font-size: clamp(1.5rem, 3.5vw, 3.5rem);
+    font-size: clamp(1.2rem, 3vw, 3rem);
     font-weight: 600;
-    color: rgba(255,255,255,0.85);
+    color: rgba(255,255,255,0.8);
     padding: 6px 0 10px;
     transition: border-color 0.2s;
     user-select: text;
@@ -103,6 +118,7 @@ body {
     position: relative;
     z-index: 2;
     font-size: clamp(6rem, 48vw, 80rem);
+    font-family: 'Orbitron', monospace, sans-serif;
     font-weight: 900;
     color: white;
     line-height: 0.85;
