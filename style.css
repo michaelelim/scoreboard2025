@@ -58,7 +58,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding-top: 8vh;
+    padding-top: 10vh;
     align-items: center;
     position: relative;
     cursor: pointer;
@@ -118,7 +118,7 @@ body {
 .score {
     position: relative;
     z-index: 2;
-    font-size: clamp(6rem, 62.4vw, 104rem);
+    font-size: clamp(6rem, 74.9vw, 125rem);
     font-family: 'Russo One', sans-serif;
     font-weight: 900;
     color: white;
@@ -151,7 +151,7 @@ body {
 #controls {
     display: none;
     justify-content: flex-start;
-    padding-top: 8vh;
+    padding-top: 10vh;
     align-items: center;
     gap: 10px;
     padding: 12px 16px;
@@ -184,7 +184,7 @@ body {
     cursor: pointer;
     z-index: 50;
     display: flex; align-items: center; justify-content: flex-start;
-    padding-top: 8vh;
+    padding-top: 10vh;
     transition: all 0.2s ease;
 }
 .toggle:hover { background: rgba(139,92,246,0.3); color: white; border-color: rgba(139,92,246,0.5); }
@@ -193,7 +193,7 @@ body {
    Landscape — score is the focus
    ============================================ */
 @media (orientation: landscape) {
-    .score { font-size: clamp(5rem, 50vh, 80rem); }
+    .score { font-size: clamp(5rem, 60vh, 96rem); }
 }
 
 /* ============================================
