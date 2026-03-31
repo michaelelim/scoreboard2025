@@ -160,9 +160,9 @@ document.addEventListener('DOMContentLoaded', () => {
     toggleButton.textContent = '-';
 
     toggleButton.addEventListener('click', () => {
-        controls.classList.toggle('hidden');
+        controls.classList.toggle('show');
         app.classList.toggle('expanded');
-        toggleButton.textContent = controls.classList.contains('hidden') ? '+' : '-';
+        toggleButton.textContent = controls.classList.contains('show') ? '−' : '+';
     });
 
     countdownInput.addEventListener('input', () => {

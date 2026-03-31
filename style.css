@@ -114,20 +114,19 @@ body {
 }
 .score:active { transform: scale(1.06); }
 
-/* Color change indicator */
+/* Colour change button */
 .change-color {
     position: absolute;
-    top: 16px;
-    font-size: 1.4rem;
-    opacity: 0.2;
+    bottom: 20px;
+    font-size: 1.6rem;
+    opacity: 0.35;
     cursor: pointer;
     z-index: 3;
-    filter: brightness(0) invert(1);
     transition: opacity 0.3s;
 }
-.change-color:hover { opacity: 0.7; }
-#changeColorA { left: 20px; }
-#changeColorB { right: 20px; }
+.change-color:hover { opacity: 0.9; }
+#changeColorA { left: 24px; }
+#changeColorB { right: 24px; }
 
 /* ============================================
    Controls — hidden by default, toggled with +
