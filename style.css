@@ -102,13 +102,13 @@ body {
 .score {
     position: relative;
     z-index: 2;
-    font-size: clamp(6rem, 28vw, 30rem);
+    font-size: clamp(6rem, 48vw, 80rem);
     font-weight: 900;
     color: white;
-    line-height: 1;
+    line-height: 0.85;
     text-shadow: 0 4px 24px rgba(0,0,0,0.3);
     font-variant-numeric: tabular-nums;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.05em;
     transition: transform 0.12s ease;
     margin: 0;
 }
@@ -175,7 +175,7 @@ body {
    Landscape — score is the focus
    ============================================ */
 @media (orientation: landscape) {
-    .score { font-size: clamp(5rem, 35vh, 50rem); }
+    .score { font-size: clamp(5rem, 50vh, 80rem); }
 }
 
 /* ============================================
@@ -183,6 +183,6 @@ body {
    ============================================ */
 @media (orientation: portrait) {
     #scoreboard { flex-direction: column; }
-    .score { font-size: clamp(5rem, 22vh, 20rem); }
+    .score { font-size: clamp(5rem, 38vw, 35rem); }
     .team input[type="text"] { font-size: clamp(1rem, 4.5vw, 2.5rem); }
 }
