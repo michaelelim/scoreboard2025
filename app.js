@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
     countdownInput.style.display = 'block';
 
     toggleClockButton.addEventListener('click', () => {
-        // mode = (mode + 1) % 3;
+        // mode = (mode + 1) % 2;
         mode = (mode + 1) % 2; // Only cycle between Stopwatch and Clock
         clearInterval(timer);
 
@@ -174,10 +174,10 @@ document.addEventListener('DOMContentLoaded', () => {
             countdownInput.style.display = 'none';
             timer = setInterval(updateClock, 1000);
         } else if (mode === 2) { // Countdown Timer
-            //countdownInput.style.display = 'block';
-            //countdownInput.value = '55:00';
-            //countdownSeconds = parseTimeInput(countdownInput.value);
-            //updateCountdown();
+            countdownInput.style.display = 'block';
+            countdownInput.value = '55:00';
+            countdownSeconds = parseTimeInput(countdownInput.value);
+            updateCountdown();
         }
     });
 
